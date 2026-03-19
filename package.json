@@ -1,6 +1,6 @@
 {
   "name": "expo-google-native-oauth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Expo native module for Google Sign-In on iOS and Android using GIDSignIn and CredentialManager.",
   "main": "build/index.js",
   "types": "build/index.d.ts",

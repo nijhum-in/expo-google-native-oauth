@@ -1,4 +1,4 @@
-# @dezire/expo-google-native-oauth
+# expo-google-native-oauth
 
 ***Note: This package was originally developed inside the [KhamoshChat](https://github.com/debarkamondal/khamoshchat-mobile) monorepo and extracted into a standalone package.***
 
@@ -7,9 +7,9 @@ Native Google Sign-In for Expo apps using **GIDSignIn** (iOS) and **CredentialMa
 ## Installation
 
 ```bash
-bun add @dezire/expo-google-native-oauth
+bun add expo-google-native-oauth
 # or
-npm install @dezire/expo-google-native-oauth
+npm install expo-google-native-oauth
 ```
 
 After installing, rebuild your native project:
@@ -43,7 +43,7 @@ Add the plugin to your `app.json` or `app.config.ts`:
 {
   "plugins": [
     [
-      "@dezire/expo-google-native-oauth",
+      "expo-google-native-oauth",
       {
         "androidClientId": "YOUR_ANDROID_CLIENT_ID.apps.googleusercontent.com",
         "iosClientId": "YOUR_IOS_CLIENT_ID.apps.googleusercontent.com",
@@ -60,7 +60,7 @@ Or with environment variables in `app.config.ts`:
 export default {
   plugins: [
     [
-      "@dezire/expo-google-native-oauth",
+      "expo-google-native-oauth",
       {
         androidClientId: process.env.EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID,
         iosClientId: process.env.EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID,
@@ -81,7 +81,7 @@ The config plugin automatically handles:
 ## JavaScript API
 
 ```typescript
-import * as GoogleAuth from '@dezire/expo-google-native-oauth';
+import * as GoogleAuth from 'expo-google-native-oauth';
 ```
 
 ### `signIn(options?)`
