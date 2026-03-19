@@ -11,7 +11,7 @@
     "clean": "expo-module clean && rm -rf plugin/build",
     "lint": "expo-module lint",
     "test": "expo-module test",
-    "prepare": "expo-module prepare",
+    "prepare": "expo-module prepare && bun run build:plugin",
     "prepublishOnly": "expo-module prepublishOnly"
   },
   "keywords": [
