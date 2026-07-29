@@ -1,6 +1,6 @@
 # expo-google-native-oauth
 
-***Note: This package was originally developed inside the [KhamoshChat](https://github.com/debarkamondal/khamoshchat-mobile) monorepo and extracted into a standalone package.***
+***Note: This package was originally developed inside the [Nijhum](https://github.com/nijhum-in/nijhum-mobile) monorepo and extracted into a standalone package.***
 
 Native Google Sign-In for Expo apps using **GIDSignIn** (iOS) and **CredentialManager** (Android).
 
