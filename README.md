@@ -10,24 +10,24 @@ Native Google Sign-In for Expo apps using **GIDSignIn** (iOS) and **CredentialMa
 
 ```
 ┌──────────────────────────────────────────────┐
-│  Nijhum Mobile (React Native app)            │
+│  DeezChatz Mobile (React Native app)         │
 │    │                                         │
 │    ├─ ⭐ expo-google-native-oauth (this)     │ ← User taps "Sign In with Google"
 │    │     └─ Returns idToken (JWT)            │
 │    │                                         │
-│    └─ Sends idToken to ──────────────────────┼──→ Nijhum API
+│    └─ Sends idToken to ──────────────────────┼──→ DeezChatz API
 │                                              │     POST /register/google/id_token
 └──────────────────────────────────────────────┘
 ```
 
-In the Nijhum ecosystem, this module handles **Registration Phase 1**:
+In the DeezChatz ecosystem, this module handles **Registration Phase 1**:
 
 1. User taps "Sign In with Google" in the app.
 2. This module triggers the native Google Sign-In flow.
 3. Google returns an `idToken` (a JWT containing the user's email, name, and profile picture).
-4. The app sends this `idToken` to the Nijhum API at `POST /register/google/id_token`.
+4. The app sends this `idToken` to the DeezChatz API at `POST /register/google/id_token`.
 5. The API verifies the token with Google's JWKS and creates a pending registration.
-6. Registration Phase 2 (crypto key upload) then happens via [expo-libsignal-dezire](https://github.com/nijhum-in/expo-libsignal-dezire).
+6. Registration Phase 2 (crypto key upload) then happens via [expo-libsignal-dezire](https://github.com/deez-in/expo-libsignal-dezire).
 
 ### Why Native Instead of Web-Based OAuth?
 

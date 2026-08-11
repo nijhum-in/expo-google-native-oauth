@@ -25,14 +25,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nijhum-in/expo-google-native-oauth.git"
+    "url": "https://github.com/deez-in/expo-google-native-oauth.git"
   },
   "bugs": {
-    "url": "https://github.com/nijhum-in/expo-google-native-oauth/issues"
+    "url": "https://github.com/deez-in/expo-google-native-oauth/issues"
   },
   "author": "Debarka Mondal (debarkamondal)",
   "license": "MIT",
-  "homepage": "https://github.com/nijhum-in/expo-google-native-oauth#readme",
+  "homepage": "https://github.com/deez-in/expo-google-native-oauth#readme",
   "expo": {
     "plugin": "./app.plugin.js"
   },

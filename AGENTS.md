@@ -4,21 +4,21 @@ This document provides instructions and context for AI coding agents working in 
 
 ## Ecosystem Context
 
-> **This module handles Google Sign-In for the Nijhum messaging app.** It is standalone — no dependency on `libsignal-dezire` or any crypto libraries.
+> **This module handles Google Sign-In for the DeezChatz messaging app.** It is standalone — no dependency on `libsignal-dezire` or any crypto libraries.
 
 ```
-nijhum-mobile  →  ⭐ expo-google-native-oauth (this module)  →  Google OAuth (native SDKs)
+deezchatz-mobile  →  ⭐ expo-google-native-oauth (this module)  →  Google OAuth (native SDKs)
                                                                     │
                                                               idToken (JWT)
                                                                     │
-                                                              nijhum-api
+                                                              deezchatz-api
                                                               POST /register/google/id_token
 ```
 
 | Relationship | Details |
 |-------------|---------|
-| **Used by** | `nijhum-mobile` — as a dependency for the registration flow |
-| **Sends data to** | `nijhum-api` — the `idToken` JWT is sent to the backend's `/register/google/id_token` endpoint |
+| **Used by** | `deezchatz-mobile` — as a dependency for the registration flow |
+| **Sends data to** | `deezchatz-api` — the `idToken` JWT is sent to the backend's `/register/google/id_token` endpoint |
 | **No dependency on** | `libsignal-dezire` or `expo-libsignal-dezire` — this is purely an OAuth module |
 
 ### Cross-Repo Impact
