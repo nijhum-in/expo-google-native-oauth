@@ -23,8 +23,8 @@ deezchatz-mobile  →  ⭐ expo-google-native-oauth (this module)  →  Google O
 
 ### Cross-Repo Impact
 
-- **If you change the `GoogleSignInResult` type shape**: `nijhum-mobile`'s registration flow consumes these fields.
-- **If you change error codes**: `nijhum-mobile` catches specific `ERR_GOOGLE_AUTH_*` codes.
+- **If you change the `GoogleSignInResult` type shape**: `deezchatz-mobile`'s registration flow consumes these fields.
+- **If you change error codes**: `deezchatz-mobile` catches specific `ERR_GOOGLE_AUTH_*` codes.
 - **If you change the config plugin behavior**: all apps using this module need to `npx expo prebuild --clean`.
 
 ---
@@ -130,7 +130,7 @@ type SignInOptions = {
 };
 ```
 
-The `idToken` is a JWT signed by Google. Its `aud` (audience) claim is set to the **Web Client ID**. The backend (`nijhum-api`) verifies this token by checking the signature against Google's JWKS and matching the audience to its `GOOGLE_CLIENT_ID` environment variable.
+The `idToken` is a JWT signed by Google. Its `aud` (audience) claim is set to the **Web Client ID**. The backend (`deezchatz-api`) verifies this token by checking the signature against Google's JWKS and matching the audience to its `GOOGLE_CLIENT_ID` environment variable.
 
 ---
 
