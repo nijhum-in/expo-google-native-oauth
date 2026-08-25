@@ -1,6 +1,6 @@
 {
   "name": "expo-google-native-oauth",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Expo native module for Google Sign-In on iOS and Android using GIDSignIn and CredentialManager.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -38,16 +38,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/react": "~19.1.17",
+    "@types/react": "~19.2.4",
     "expo-module-scripts": "^56.0.3",
     "expo": "^57.0.16",
-    "@expo/config-plugins": "^57.0.9",
-    "react-native": "0.87.0"
+    "react": "19.2.3",
+    "react-native": "0.86.2"
   },
   "peerDependencies": {
     "expo": "*",
-    "@expo/config-plugins": "*",
-    "react": "^19.2.4",
+    "react": "*",
     "react-native": "*"
   }
 }

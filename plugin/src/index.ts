@@ -2,8 +2,8 @@ import {
   withAndroidManifest,
   withInfoPlist,
   withPlugins,
-  ConfigPlugin,
-} from "@expo/config-plugins";
+  type ConfigPlugin,
+} from "expo/config-plugins";
 
 const WEB_CLIENT_ID_META = "expo.modules.googleauth.GOOGLE_WEB_CLIENT_ID";
 const ANDROID_CLIENT_ID_META = "expo.modules.googleauth.GOOGLE_ANDROID_CLIENT_ID";
