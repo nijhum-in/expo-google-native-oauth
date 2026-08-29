@@ -1,6 +1,6 @@
 import { requireNativeModule } from 'expo-modules-core';
 
-import { GoogleSignInResult, SignInOptions } from './ExpoGoogleNativeOauth.types';
+import type { GoogleSignInResult, SignInOptions } from './ExpoGoogleNativeOauth.types';
 
 declare class ExpoGoogleNativeOauthModule {
   isAvailable(): boolean;

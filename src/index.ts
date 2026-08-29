@@ -1,5 +1,5 @@
 import ExpoGoogleNativeOauthModule from './ExpoGoogleNativeOauthModule';
-import { SignInOptions, GoogleSignInResult } from './ExpoGoogleNativeOauth.types';
+import type { SignInOptions, GoogleSignInResult } from './ExpoGoogleNativeOauth.types';
 
 /**
  * Checks if the Google Auth native module is available on the device.
@@ -25,4 +25,4 @@ export async function signOut(): Promise<void> {
   return await ExpoGoogleNativeOauthModule.signOut();
 }
 
-export { SignInOptions, GoogleSignInResult };
+export type { SignInOptions, GoogleSignInResult };
